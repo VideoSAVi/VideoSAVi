@@ -18,9 +18,9 @@
 3. **State-of-the-Art Performance**: VideoSAVi achieves substantial improvements across multiple video-language benchmarks, outperforming existing models in temporal reasoning (+12%), multi-choice QA (+28%), and zero-shot open-ended QA (+8%).
 
 ## Installation
-Please install the environment using [LLaVA-NeXT(https://github.com/LLaVA-VL/LLaVA-NeXT)
+Please install and activate the conda environment using [LLaVA-NeXT(https://github.com/LLaVA-VL/LLaVA-NeXT)
 
-##Inference
+## Inference
 ```bash
 python qwen_inference.py \
   --video_dir /path/to/videos \
@@ -32,7 +32,7 @@ python qwen_inference.py \
 
 
 
-##Citation
+## Citation
 ```bash
 @article{kulkarni2024videosavi,
   title={VideoSAVi: Self-Aligned Video Language Models without Human Supervision},
