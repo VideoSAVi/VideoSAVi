@@ -1,7 +1,7 @@
 ## <div align="center"> <i>VideoSAVi</i>: Self-Aligned Video Language Models without Human Supervision </div>
 
 <div align="center">
-  <a href="https://videosavi.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=GitHub&color=blue&logo=github"></a> &ensp;
+  <a href="https://people-robots.github.io/VideoSAVi/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=GitHub&color=blue&logo=github"></a> &ensp;
   <a href="https://arxiv.org/abs/2412.00624"><img src="https://img.shields.io/static/v1?label=ArXiv&message=2402.05195&color=B31B1B&logo=arxiv"></a> &ensp;
   <a href="https://huggingface.co/yogkul2000/VideoSAVi"><img src="https://img.shields.io/static/v1?label=Model Weights&message=HuggingFace&color=yellow"></a> &ensp;
   <br>
