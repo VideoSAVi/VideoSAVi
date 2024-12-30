@@ -19,3 +19,25 @@
 
 ## Installation
 Please install the environment using [LLaVA-NeXT(https://github.com/LLaVA-VL/LLaVA-NeXT)
+
+##Inference
+```bash
+python qwen_inference.py \
+  --video_dir /path/to/videos \
+  --output_dir /path/to/output \
+  --model_path /path/to/model \
+  --questions_dir /path/to/questions \
+  --task_type multi-choice
+```
+
+
+
+##Citation
+```bash
+@article{kulkarni2024videosavi,
+  title={VideoSAVi: Self-Aligned Video Language Models without Human Supervision},
+  author={Yogesh Kulkarni and Pooyan Fazli},
+  journal={arXiv preprint arXiv:2412.00624},
+  year={2024}
+}
+```
