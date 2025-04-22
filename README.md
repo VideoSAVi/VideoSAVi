@@ -17,7 +17,7 @@ Recent advances in video-large language models (Video-LLMs) have led to signific
 
 <table class="center">
     <tr>
-    <td><img src="assets/videosavi_pipeline.png" alt="VideoSAVi Overview Diagram"></td>
+    <td><img src="assets/pipeline.png" alt="VideoSAVi Overview Diagram"></td>
     </tr>
     <tr>
     <td align="center"><em>Overview of the VideoSAVi self-alignment pipeline.</em></td>
