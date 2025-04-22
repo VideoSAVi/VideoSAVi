@@ -7,8 +7,8 @@
 
 <a href='https://arxiv.org/abs/2412.00624'><img src='https://img.shields.io/badge/arXiv-2412.00624-b31b1b.svg'></a> &nbsp;
  <a href='https://people-robots.github.io/VideoSAVi/'><img src='https://img.shields.io/badge/Project-Website-blue'></a>&nbsp;
- <a href='[https://huggingface.co/datasets/yogkul2000/VideoSAVi]'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20VideoSAVi--24K-Dataset-blue'></a>&nbsp;
- <a href='[https://huggingface.co/yogkul2000/VideoSAVi]'><img src='https://img.shields.io/badge/Model-Weights-yellow'></a>&nbsp;
+ <a href='https://huggingface.co/datasets/yogkul2000/VideoSAVi'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20VideoSAVi--24K-Dataset-blue'></a>&nbsp;
+ <a href='https://huggingface.co/yogkul2000/VideoSAVi'><img src='https://img.shields.io/badge/Model-Weights-yellow'></a>&nbsp;
 
 </div>
 
