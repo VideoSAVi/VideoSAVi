@@ -1,0 +1,81 @@
+[tool.black]
+line-length = 240
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "videosavi"
+version = "1.0.0.dev0"
+description = "VideoSAVi: Self-Aligned Video Language Models without Human Supervision"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[project.optional-dependencies]
+standalone = [
+    "shortuuid",
+    "httpx==0.24.0",
+    "einops",
+    "ftfy",
+    "pillow",
+    "numpy",
+    "opencv-python",
+    "decord",
+]
+
+train = [
+    "torch==2.1.2",
+    "torchvision==0.16.2",
+    "torchaudio==2.1.2",
+    "transformers==4.40.0",
+    "flash-attn==2.5.2",
+    "numpy==1.26.1",
+    "ms-swift[llm]",
+    "open_clip_torch",
+    "fastapi",
+    "markdown2[all]",
+    "requests",
+    "sentencepiece",
+    "uvicorn",
+    "wandb",
+    "deepspeed==0.14.4",
+    "peft==0.4.0",
+    "accelerate>=0.29.1",
+    "tokenizers~=0.15.2",
+    "bitsandbytes==0.41.0",
+    "scikit-learn==1.2.2",
+    "sentencepiece~=0.1.99",
+    "einops==0.6.1",
+    "einops-exts==0.0.4",
+    "gradio_client==0.2.9",
+    "urllib3<=2.0.0",
+    "datasets==2.16.1",
+    "pydantic==1.10.8",
+    "timm",
+    "hf_transfer",
+    "av",
+    "tyro",
+    "scipy",
+]
+
+eval = [
+    "torch==2.1.2",
+    "torchvision==0.16.2",
+    "torchaudio==2.1.2",
+    "transformers==4.40.0",
+    "flash-attn==2.5.2",
+    "lmms-eval",
+    "datasets",
+    "pandas",
+    "tqdm",
+]
+
+[project.urls]
+"Homepage" = "https://people-robots.github.io/VideoSAVi/"
+"Repository" = "https://github.com/your-username/VideoSAVi"
+"Paper" = "https://arxiv.org/abs/2412.00624"

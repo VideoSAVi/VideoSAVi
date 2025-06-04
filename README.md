@@ -43,6 +43,48 @@ Recent advances in video-large language models (Video-LLMs) have led to signific
 - [Citation](#citation)
 - [Contact](#contact)
 
+## 📦 Install
+
+### Environment Setup
+
+```bash
+conda create -n videosavi python=3.10
+conda activate videosavi
+
+# Install PyTorch with CUDA 11.8
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+
+# Install flash attention (if facing issues, use the command below)
+pip install flash-attn==2.5.2
+
+# If flash-attn installation fails, try:
+pip install flash-attn==2.5.2 --no-build-isolation
+
+pip install transformers==4.40.0
+
+# Install other dependencies
+pip install decord opencv-python pillow numpy
+```
+
+### Alternative: Install with pyproject.toml
+
+```bash
+# Clone the repository
+git clone https://github.com/VideoSAVi/VideoSAVi.git
+cd VideoSAVi
+
+# Install base package
+pip install -e .
+
+# Install with training dependencies
+pip install -e ".[train]"
+
+# Install with evaluation dependencies  
+pip install -e ".[eval]"
+
+# Install with all dependencies
+pip install -e ".[train,eval]"
+```
 
 ## 📝 Data
 
@@ -55,10 +97,45 @@ Recent advances in video-large language models (Video-LLMs) have led to signific
     3.  Generating a revised, preferred response ($r_{preferred}$) based on the critique.
 * The generated preference dataset will be released soon. `[Link to Dataset when available]`
 
+
+## 📊 Evaluation
+
+### Setup LMMs-Eval Framework
+
+```bash
+# Install LMMs-Eval for standardized evaluation
+git clone https://github.com/EvolvingLMMs-Lab/lmms-eval.git
+cd lmms-eval
+pip install -e .
+```
+
 ### Evaluation Data
 We evaluated VideoSAVi on the following standard benchmarks:
 * **General Video Understanding:** MVBench, Perception Test, TempCompass, NeXTQA.
 * **Long-Form Video Understanding:** EgoSchema, LongVideoBench.
+
+#### Individual Benchmark Evaluation
+
+```bash
+# Evaluate on EgoSchema
+accelerate launch --num_processes 4 -m lmms_eval \
+    --model internvl2 \
+    --model_args pretrained=yogkul2000/VideoSAVi,num_frame=32,modality=video \
+    --tasks egoschema_subset \
+    --batch_size 1 \
+    --log_samples \
+    --log_samples_suffix videosavi \
+    --output_path ./logs_videosavi_eval/
+```
+
+#### Usage Examples
+
+```bash
+chmod +x run_inference.sh
+./run_inference.sh --video_path ./examples/sample_video.mp4
+# Custom question
+./run_inference.sh --video_path ./examples/sample_video.mp4 --question "Describe the spatial relationships in this video"
+```
 
 ## 📝 Citation
 If you find VideoSAVi useful for your research, please cite our paper:
