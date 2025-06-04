@@ -77,5 +77,5 @@ eval = [
 
 [project.urls]
 "Homepage" = "https://people-robots.github.io/VideoSAVi/"
-"Repository" = "https://github.com/your-username/VideoSAVi"
+"Repository" = "https://github.com/VideoSAVi/VideoSAV"
 "Paper" = "https://arxiv.org/abs/2412.00624"
