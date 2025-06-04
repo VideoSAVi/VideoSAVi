@@ -27,11 +27,11 @@ Recent advances in video-large language models (Video-LLMs) have led to signific
 
 ## 🧰 TODO
 - [x] Release Paper.
-- [ ] Release VideoSAVi Preference Dataset.
-- [ ] Release VideoSAVi fine-tuned model weights (e.g., InternVL2.5 + VideoSAVi).
+- [x] Release VideoSAVi fine-tuned model weights (e.g., InternVL2.5 + VideoSAVi).
+- [x] Release Inference Code.
+- [x] Add detailed evaluation scripts.
 - [ ] Release Training Code (Self-alignment pipeline scripts).
-- [ ] Release Inference Code.
-- [ ] Add detailed evaluation scripts.
+- [ ] Release VideoSAVi Preference Dataset.
 
 
 ## 📖 Contents
