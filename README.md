@@ -145,7 +145,7 @@ If you find VideoSAVi useful for your research, please cite our paper:
   author={Kulkarni, Yogesh and Fazli, Pooyan},
   journal={arXiv preprint arXiv:2412.00624},
   year={2024},
-  url={[https://arxiv.org/abs/2412.00624](https://arxiv.org/abs/2412.00624)}
+  url={https://arxiv.org/abs/2412.00624}
 }
 ```
 
